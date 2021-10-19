@@ -3,4 +3,4 @@ from app import app
 from .task import Task
 
 restserver = Api(app)
-restserver.add_resource(Task, '/get/data/')
+restserver.add_resource(Task, '/candidate/candidate-details')

@@ -1,0 +1,312 @@
+{
+    "Level": "THE BEST",
+    "ID": 178974.0,
+    "URL": "https://groceries.abc.com/browse/178974",
+    "children": [
+        {
+            "Level": "FRESH",
+            "ID": 178969.0,
+            "URL": "https://groceries.abc.com/browse/178974/178969",
+            "children": [
+                {
+                    "Level": "CHEESE",
+                    "ID": 178975.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178975",
+                    "children": []
+                },
+                {
+                    "Level": "COOKED MEAT & ANTIPASTI",
+                    "ID": 178976.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178976",
+                    "children": []
+                },
+                {
+                    "Level": "DAIRY & EGGS",
+                    "ID": 178977.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178977",
+                    "children": []
+                },
+                {
+                    "Level": "DESSERTS",
+                    "ID": 178978.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178978",
+                    "children": []
+                },
+                {
+                    "Level": "DRINKS",
+                    "ID": 178979.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178979",
+                    "children": []
+                },
+                {
+                    "Level": "FISH & SEAFOOD",
+                    "ID": 178980.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178980",
+                    "children": []
+                },
+                {
+                    "Level": "FRUIT & VEGETABLES",
+                    "ID": 178981.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178981",
+                    "children": []
+                },
+                {
+                    "Level": "MEAT & POULTRY",
+                    "ID": 178982.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178982",
+                    "children": []
+                },
+                {
+                    "Level": "NUTS & SNACKS",
+                    "ID": 178983.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178983",
+                    "children": []
+                },
+                {
+                    "Level": "PIES & QUICHES ",
+                    "ID": 178984.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178984",
+                    "children": []
+                },
+                {
+                    "Level": "PIZZA, PASTA & GARLIC BREAD",
+                    "ID": 178985.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178985",
+                    "children": []
+                },
+                {
+                    "Level": "READY MEALS",
+                    "ID": 178986.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178986",
+                    "children": []
+                },
+                {
+                    "Level": "SAVOURY SNACKS & CHILLED",
+                    "ID": 178987.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178987",
+                    "children": []
+                },
+                {
+                    "Level": "SOUPS & SAUCES",
+                    "ID": 178988.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178988",
+                    "children": []
+                },
+                {
+                    "Level": "VEGETARIAN",
+                    "ID": 178989.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178969/178989",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "Level": "FOOD CUPBOARD",
+            "ID": 178970.0,
+            "URL": "https://groceries.abc.com/browse/178974/178970",
+            "children": [
+                {
+                    "Level": "ANTIPASTI",
+                    "ID": 178990.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178990",
+                    "children": []
+                },
+                {
+                    "Level": "BISCUITS & CRACKERS",
+                    "ID": 178991.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178991",
+                    "children": []
+                },
+                {
+                    "Level": "BREAKFAST CEREALS",
+                    "ID": 178992.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178992",
+                    "children": []
+                },
+                {
+                    "Level": "CHOCOLATE & SWEETS",
+                    "ID": 178993.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178993",
+                    "children": []
+                },
+                {
+                    "Level": "CONDIMENTS & DRESSINGS",
+                    "ID": 178994.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178994",
+                    "children": []
+                },
+                {
+                    "Level": "CRISPS & SAVOURY SNACKS",
+                    "ID": 178995.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/178995",
+                    "children": []
+                },
+                {
+                    "Level": "HOMEBAKING",
+                    "ID": 179016.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179016",
+                    "children": []
+                },
+                {
+                    "Level": "JAMS, SPREADS & CHUTNEYS",
+                    "ID": 179017.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179017",
+                    "children": []
+                },
+                {
+                    "Level": "PASTA",
+                    "ID": 179018.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179018",
+                    "children": []
+                },
+                {
+                    "Level": "PUDDINGS & DESSERTS",
+                    "ID": 179019.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179019",
+                    "children": []
+                },
+                {
+                    "Level": "SAUCES, STOCKS & GRAVY",
+                    "ID": 179020.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179020",
+                    "children": []
+                },
+                {
+                    "Level": "TEA & COFFEE",
+                    "ID": 179021.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179021",
+                    "children": []
+                },
+                {
+                    "Level": "TINS & CANS",
+                    "ID": 179022.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178970/179022",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "Level": "BAKERY & CAKES",
+            "ID": 178971.0,
+            "URL": "https://groceries.abc.com/browse/178974/178971",
+            "children": [
+                {
+                    "Level": "BREAD & BREAD ROLLS",
+                    "ID": 179023.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178971/179023",
+                    "children": []
+                },
+                {
+                    "Level": "CAKES, PIES & TARTS",
+                    "ID": 179024.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178971/179024",
+                    "children": []
+                },
+                {
+                    "Level": "CROISSANTS & BREAKFAST BAKERY",
+                    "ID": 179025.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178971/179025",
+                    "children": []
+                },
+                {
+                    "Level": "DESSERTS & PUDDINGS",
+                    "ID": 179026.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178971/179026",
+                    "children": []
+                },
+                {
+                    "Level": "FRUITED BREAD, SCONES & HOT CROSS BUNS",
+                    "ID": 179027.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178971/179027",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "Level": "FROZEN",
+            "ID": 178972.0,
+            "URL": "https://groceries.abc.com/browse/178974/178972",
+            "children": [
+                {
+                    "Level": "CAKES, PIES & TARTS",
+                    "ID": 179028.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179028",
+                    "children": []
+                },
+                {
+                    "Level": "CHIPS, POTATOES & VEGETABLES",
+                    "ID": 179029.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179029",
+                    "children": []
+                },
+                {
+                    "Level": "DESSERTS",
+                    "ID": 179030.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179030",
+                    "children": []
+                },
+                {
+                    "Level": "FISH & SEAFOOD",
+                    "ID": 179031.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179031",
+                    "children": []
+                },
+                {
+                    "Level": "ICE CREAM & LOLLIES",
+                    "ID": 179032.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179032",
+                    "children": []
+                },
+                {
+                    "Level": "MEAT & POULTRY",
+                    "ID": 179033.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179033",
+                    "children": []
+                },
+                {
+                    "Level": "PIES & PASTRIES",
+                    "ID": 179034.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179034",
+                    "children": []
+                },
+                {
+                    "Level": "PIZZA & GARLIC BREAD",
+                    "ID": 179035.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179035",
+                    "children": []
+                },
+                {
+                    "Level": "READY MEALS",
+                    "ID": 179036.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178972/179036",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "Level": "DRINKS",
+            "ID": 178973.0,
+            "URL": "https://groceries.abc.com/browse/178974/178973",
+            "children": [
+                {
+                    "Level": "SOFT DRINKS",
+                    "ID": 179037.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178973/179037",
+                    "children": []
+                },
+                {
+                    "Level": "WINE & SPARKLING",
+                    "ID": 179038.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178973/179038",
+                    "children": []
+                },
+                {
+                    "Level": "BEER",
+                    "ID": 179039.0,
+                    "URL": "https://groceries.abc.com/browse/178974/178973/179039",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}
