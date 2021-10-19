@@ -1,5 +1,5 @@
 try:
-    from app import app
+
     import unittest
     import requests
 
