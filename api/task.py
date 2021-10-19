@@ -71,3 +71,5 @@ class CandidateConstants:
     CANDIDATE_RESULT = 'candidate_info.json'
     CHILDREN = 'children'
     BASE_FILE = 'candidate-informations'
+    MESSAGE = 'File uploaded successfully, the json format data you can check in candidate_info.json ' \
+              'file in project directory level'

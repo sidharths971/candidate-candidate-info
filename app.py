@@ -16,7 +16,7 @@ def hello_world():
             if image.filename not in os.listdir(CandidateConstants.BASE_FILE):
                 image.save(os.path.join(CandidateConstants.BASE_FILE, image.filename))
 
-        return redirect(request.url)
+        return render_template('index.html', name=CandidateConstants.MESSAGE)
 
     return render_template('index.html')
 #
