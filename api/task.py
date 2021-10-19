@@ -24,6 +24,12 @@ class Task(Resource):
 
 
 def read_candidate_info(path: str):
+    """
+    @desc Take absolute path of csv file and fill the missing values and return the dictionary
+    format candidate information
+    :param path: str
+    :return: dict
+    """
     candidate_info_df = pd.read_csv(path)
     candidate_info_df.fillna(0, inplace=True)
     candidate_dic_info = candidate_info_df.to_dict(orient='index')
@@ -32,38 +38,52 @@ def read_candidate_info(path: str):
 
 
 def strature_of_candidate(dic, pry_key):
- strature = {}
- candidate_data = dic[pry_key[0]]
- strature[list(dic[pry_key[0]].keys())[1].split()[0]] = candidate_data.get(list(dic[pry_key[0]].keys())[1], 0)
- strature[list(dic[pry_key[0]].keys())[2].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[2], 0)
- strature[list(dic[pry_key[0]].keys())[3].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[3], 0)
- strature[CandidateConstants.CHILDREN] = []
+    """
+    @desc Take the dictionary format candidate data and create primary strature of the candidate
+    :param dic: dict
+    :param pry_key: list
+    :return: dict
+    """
+    strature = {}
+    candidate_data = dic[pry_key[0]]
+    strature[list(dic[pry_key[0]].keys())[1].split()[0]] = candidate_data.get(list(dic[pry_key[0]].keys())[1], 0)
+    strature[list(dic[pry_key[0]].keys())[2].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[2], 0)
+    strature[list(dic[pry_key[0]].keys())[3].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[3], 0)
+    strature[CandidateConstants.CHILDREN] = []
 
- return strature
+    return strature
 
 
 def format_response(dic, strature, pry_key):
- count = 0
- for x in range(1, len(pry_key)):
-  if dic[x][list(dic[x].keys())[1]] == 0:
-   continue
-  elif dic[x][list(dic[x].keys())[-1]] == 0:
-   strature[CandidateConstants.CHILDREN].append({
-    list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[4]],
-    list(dic[x].keys())[2].split()[-1]: dic[x][list(dic[x].keys())[5]],
-    list(dic[x].keys())[3].split()[-1]: dic[x][list(dic[x].keys())[6]],
-    CandidateConstants.CHILDREN: []
-   })
-   count += 1
-  else:
-   strature[CandidateConstants.CHILDREN][count-1][CandidateConstants.CHILDREN].append({
-    list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[7]],
-    list(dic[x].keys())[2].split()[-1]: dic[x][list(dic[x].keys())[8]],
-    list(dic[x].keys())[3].split()[-1]: dic[x][list(dic[x].keys())[9]],
-    CandidateConstants.CHILDREN: []
-   })
+    """
+    @desc Take dictnary format candidate information and primary strature and format the all candidate
+    informatin based on the requirement and return the same
+    :param dic: dict
+    :param strature: dict
+    :param pry_key: list
+    :return: dict
+    """
+    count = 0
+    for x in range(1, len(pry_key)):
+        if dic[x][list(dic[x].keys())[1]] == 0:
+            continue
+        elif dic[x][list(dic[x].keys())[-1]] == 0:
+            strature[CandidateConstants.CHILDREN].append({
+            list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[4]],
+            list(dic[x].keys())[2].split()[-1]: dic[x][list(dic[x].keys())[5]],
+            list(dic[x].keys())[3].split()[-1]: dic[x][list(dic[x].keys())[6]],
+            CandidateConstants.CHILDREN: []
+            })
+            count += 1
+        else:
+            strature[CandidateConstants.CHILDREN][count-1][CandidateConstants.CHILDREN].append({
+            list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[7]],
+            list(dic[x].keys())[2].split()[-1]: dic[x][list(dic[x].keys())[8]],
+            list(dic[x].keys())[3].split()[-1]: dic[x][list(dic[x].keys())[9]],
+            CandidateConstants.CHILDREN: []
+            })
 
- return strature
+    return strature
 
 
 class CandidateConstants:

@@ -8,6 +8,9 @@ except Exception as e:
 
 
 class TestAPi(unittest.TestCase):
+    """
+    @desc Test the status code after successfully json file cration with the help of API created
+    """
     API_BASE_URL = 'http://127.0.0.1:8000/'
     ENDPOINT = 'candidate/candidate-details'
 
