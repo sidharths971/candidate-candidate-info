@@ -92,4 +92,5 @@ class CandidateConstants:
     CHILDREN = 'children'
     BASE_FILE = 'candidate-informations'
     MESSAGE = 'File uploaded successfully, the json format data you can check in candidate_info.json ' \
-              'file in project directory level'
+              'file in project directory level or you can check in API in' \
+              ' "http://127.0.0.1:8000/candidate/candidate-details"'

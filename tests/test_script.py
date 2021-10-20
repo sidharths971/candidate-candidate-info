@@ -1,10 +1,6 @@
-try:
+import unittest
+import requests
 
-    import unittest
-    import requests
-
-except Exception as e:
-    print(f"module not found {e}")
 
 
 class TestAPi(unittest.TestCase):
