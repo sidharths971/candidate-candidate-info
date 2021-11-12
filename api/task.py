@@ -12,10 +12,14 @@ class Task(Resource):
     """
 
     def get(self):
+        #--Read the candidate details from file 
         candidate_details = read_candidate_info(CandidateConstants.PATH)
         pry_key = list(candidate_details.keys())
+        #-- create a base strature for out put file
         strture = strature_of_candidate(candidate_details, pry_key)
+        #--create the proper out put in dictionary file
         candidate_info_result = format_response(candidate_details, strture, pry_key)
+        #--If file not present it will create and store in file
         if CandidateConstants.CANDIDATE_RESULT not in os.listdir():
             with open(CandidateConstants.CANDIDATE_RESULT, 'w') as f:
                 json.dump(candidate_info_result, f, indent=4)
@@ -31,6 +35,7 @@ def read_candidate_info(path: str):
     :return: dict
     """
     candidate_info_df = pd.read_csv(path)
+    #--fill the missing values with 0
     candidate_info_df.fillna(0, inplace=True)
     candidate_dic_info = candidate_info_df.to_dict(orient='index')
 
@@ -46,6 +51,7 @@ def strature_of_candidate(dic, pry_key):
     """
     strature = {}
     candidate_data = dic[pry_key[0]]
+    #-- create basic strature for the every product from the converted dictinary
     strature[list(dic[pry_key[0]].keys())[1].split()[0]] = candidate_data.get(list(dic[pry_key[0]].keys())[1], 0)
     strature[list(dic[pry_key[0]].keys())[2].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[2], 0)
     strature[list(dic[pry_key[0]].keys())[3].split()[-1]] = candidate_data.get(list(dic[pry_key[0]].keys())[3], 0)
@@ -65,8 +71,10 @@ def format_response(dic, strature, pry_key):
     """
     count = 0
     for x in range(1, len(pry_key)):
+        #--If the value is 0 skip the line of execution.
         if dic[x][list(dic[x].keys())[1]] == 0:
             continue
+        #--Compaire the last element of dictionary and add key value in dictionary
         elif dic[x][list(dic[x].keys())[-1]] == 0:
             strature[CandidateConstants.CHILDREN].append({
             list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[4]],
@@ -75,6 +83,7 @@ def format_response(dic, strature, pry_key):
             CandidateConstants.CHILDREN: []
             })
             count += 1
+        #--Otherwise add the element in appropriate data in dictionary
         else:
             strature[CandidateConstants.CHILDREN][count-1][CandidateConstants.CHILDREN].append({
             list(dic[x].keys())[1].split()[0]: dic[x][list(dic[x].keys())[7]],
@@ -86,6 +95,7 @@ def format_response(dic, strature, pry_key):
     return strature
 
 
+#--This is the helper class 
 class CandidateConstants:
     PATH = 'candidate-informations/data - external candidates.csv'
     CANDIDATE_RESULT = 'candidate_info.json'
