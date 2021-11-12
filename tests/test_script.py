@@ -11,6 +11,7 @@ class TestAPi(unittest.TestCase):
     ENDPOINT = 'candidate/candidate-details'
 
     def test_status(self):
+        #--Test the api.
         responce = requests.get("{}".format(TestAPi.API_BASE_URL + TestAPi.ENDPOINT))
         self.assertEqual(responce.status_code, 200)
 
